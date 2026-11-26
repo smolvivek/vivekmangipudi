@@ -175,67 +175,12 @@
   ]
  },
  {
-  "group": "Strategy and reporting",
-  "items": [
-   {
-    "name": "Google Docs",
-    "icon": "googledocs",
-    "color": "#4285F4"
-   },
-   {
-    "name": "Google Sheets",
-    "icon": "googlesheets",
-    "color": "#34A853"
-   },
-   {
-    "name": "Google Slides",
-    "icon": "googleslides",
-    "color": "#FBBC04"
-   },
-   {
-    "name": "Google Drive",
-    "icon": "googledrive",
-    "color": "#4285F4"
-   },
-   {
-    "name": "PowerPoint",
-    "icon": "microsoftpowerpoint",
-    "color": "#B7472A"
-   },
-   {
-    "name": "Keynote",
-    "mono": "Kn",
-    "color": "#141414"
-   },
-   {
-    "name": "Excel",
-    "icon": "microsoftexcel",
-    "color": "#217346"
-   }
-  ]
- },
- {
   "group": "AI and automation",
   "items": [
    {
     "name": "Claude and Claude Code",
     "icon": "claude",
     "color": "#D97757"
-   },
-   {
-    "name": "ChatGPT",
-    "icon": "openai",
-    "color": "#412991"
-   },
-   {
-    "name": "Gemini",
-    "icon": "googlegemini",
-    "color": "#8E75B2"
-   },
-   {
-    "name": "Perplexity",
-    "icon": "perplexity",
-    "color": "#1FB8CD"
    },
    {
     "name": "Midjourney",
@@ -361,31 +306,6 @@
     "name": "Circle",
     "icon": "circle",
     "color": "#8669AE"
-   }
-  ]
- },
- {
-  "group": "Everyday workflow",
-  "items": [
-   {
-    "name": "Canva",
-    "icon": "canva",
-    "color": "#00C4CC"
-   },
-   {
-    "name": "Notion",
-    "icon": "notion",
-    "color": "#000000"
-   },
-   {
-    "name": "Slack",
-    "icon": "slack",
-    "color": "#4A154B"
-   },
-   {
-    "name": "Obsidian",
-    "icon": "obsidian",
-    "color": "#7C3AED"
    }
   ]
  }
