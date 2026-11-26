@@ -1,0 +1,50 @@
+---
+import site from '../data/site.json';
+interface Props { title?: string; description?: string; nav?: string; image?: string }
+const { title, description = 'Vivek Mangipudi is a creative director in Mumbai, moving into marketing and strategy. Films, products and brand work.', nav = '', image = '/img/satya.jpg' } = Astro.props;
+const full = title ? `${title} · Vivek Mangipudi` : 'Vivek Mangipudi · Creative director';
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const person = { '@context': 'https://schema.org', '@type': 'Person', name: 'Vivek Mangipudi', jobTitle: 'Creative Director', address: { '@type': 'PostalAddress', addressLocality: 'Mumbai', addressCountry: 'IN' }, email: site.email, url: Astro.site?.toString(), sameAs: site.socials.map((s) => s.href) };
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{full}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<meta property="og:title" content={full} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.site)} />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+Devanagari:wght@500&family=Noto+Sans+JP:wght@500&family=JetBrains+Mono:wght@400&display=swap" />
+<link rel="stylesheet" href="/styles.css" />
+<script type="application/ld+json" set:html={JSON.stringify(person)} />
+</head>
+<body>
+<div class="site">
+<header class="top">
+<a href="/" style="font-weight:600;">Vivek Mangipudi</a><span class="dot" aria-hidden="true"></span>
+<nav class="r">
+<a href="/work" class={nav === 'work' ? 'on' : ''}>Work</a>
+<a href="/photographs" class={nav === 'ph' ? 'on' : ''}>Photographs</a>
+<a href="/about" class={nav === 'about' ? 'on' : ''}>About</a>
+<a href={`mailto:${site.email}`}>Contact</a>
+</nav>
+</header>
+<main><slot /></main>
+<footer class="foot">
+<span style="font-size:13px;color:#7A766F;">Open to marketing and strategy roles</span>
+<a class="mail" href={`mailto:${site.email}`}>{site.email}</a>
+<div class="socs" style="margin-top:8px;">
+{site.socials.map((s) => <a class="soc" href={s.href} target="_blank" rel="noopener"><Fragment set:html={s.svg} /><span>{s.name}</span></a>)}
+</div>
+</footer>
+</div>
+</body>
+</html>

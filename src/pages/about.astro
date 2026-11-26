@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import site from '../data/site.json';
+---
+<Base title="About" nav="about">
+<div class="ph-head"><h1>About</h1><p class="lede">{site.intro1}</p><p class="lede g" set:html={site.intro2} /></div>
+<section class="sec" style="margin-top:40px;"><div class="sh"><h2>Experience</h2></div>
+<div class="xp">{site.experience.map((x) => <div><span class="y">{x.years}</span><b>{x.role}</b><span>{x.org}</span></div>)}</div></section>
+<section class="sec"><div class="sh"><h2>Education</h2></div>
+<div class="xp"><div><span class="y">2010</span><b>PG Diploma, Broadcast Media and Advertising</b><span>IIMC, Delhi</span></div><div><span class="y">2008</span><b>Bachelor of Journalism and Mass Communication</b><span>GGSIP University</span></div></div></section>
+</Base>

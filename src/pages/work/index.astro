@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import site from '../../data/site.json';
+const go = (w) => w.href.startsWith('/work/') ? 'Case study' : w.href === '/photographs' ? 'See photographs' : (w.cat === 'films' || /vimeo|youtube/.test(w.href)) ? 'Watch' : 'Visit';
+---
+<Base title="Work" nav="work" description="Strategy, products, films and photographs by Vivek Mangipudi.">
+<div class="ph-head"><h1>Work</h1><p class="lede g">Strategy, products, films and photographs. Case studies for the bigger projects; everything else links to where it lives.</p></div>
+<input class="flt" type="radio" name="flt" id="fa" checked /><input class="flt" type="radio" name="flt" id="ff" /><input class="flt" type="radio" name="flt" id="fp" /><input class="flt" type="radio" name="flt" id="fh" />
+<div class="seg"><div><label for="fa">All</label><label for="fp">Products</label><label for="ff">Films</label><label for="fh">Photography</label></div></div>
+<div class="grid">
+{site.work.map((w) => {
+  const ext = !w.href.startsWith('/');
+  const cls = { products: 'p', films: 'fm', photography: 'ph' }[w.cat];
+  return (
+  <a class={`t ${cls}`} href={w.href} target={ext ? '_blank' : undefined} rel={ext ? 'noopener' : undefined}>
+  <div class="m"><img src={`/img/${w.img}.jpg`} alt={w.title} style={`object-position:${w.pos};`} loading="lazy" /></div>
+  <b>{w.title}</b><span class="kind">{w.kind} · {w.year}</span><p>{w.line}</p><span class="go">{go(w)} →</span>
+  </a>);
+})}
+</div>
+</Base>

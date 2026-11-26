@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import site from '../../data/site.json';
+export function getStaticPaths() {
+  return site.projects.map((p, i) => ({ params: { slug: p.slug }, props: { p, prev: site.projects[(i - 1 + site.projects.length) % site.projects.length], next: site.projects[(i + 1) % site.projects.length] } }));
+}
+const { p, prev, next } = Astro.props;
+---
+<Base title={p.title} nav="work" description={p.short} image={`/img/${p.img}.jpg`}>
+<div class="ph-head"><span class="kind">{p.kind}</span><h1>{p.title}</h1><p class="lede">{p.short}</p></div>
+<div class="specs">
+<div><span>Role</span>{p.role}</div><div><span>Client</span>{p.client}</div><div><span>Year</span>{p.year}</div>
+<div><span>Link</span><a class="u" href={p.link.href} target="_blank" rel="noopener">{p.link.label}</a></div>
+</div>
+<a href={p.link.href} target="_blank" rel="noopener"><img class="heroimg" src={`/img/${p.img}.jpg`} alt={p.title} /></a>
+<div class="story">{p.story.map((s) => <div><h4>{s.h}</h4><p set:html={s.t} /></div>)}</div>
+{p.gallery.length > 0 && <div class="gal">{p.gallery.map((g) => <img src={`/img/${g}.jpg`} alt={p.title} loading="lazy" />)}</div>}
+<div class="pn"><a href={`/work/${prev.slug}`}><span>Previous</span>{prev.title}</a><a href={`/work/${next.slug}`}><span>Next</span>{next.title}</a></div>
+</Base>

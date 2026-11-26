@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import site from '../data/site.json';
+---
+<Base title="Photographs" nav="ph" description="Street photography by Vivek Mangipudi." image="/img/pigeons.jpg">
+<div class="ph-head"><h1>Photographs</h1><p class="lede g">With my trusty Fujifilm, I enjoy street photography. Chasing Dragons on Streets, a photo essay, was published internationally.</p></div>
+<div class="gal" style="margin-top:0;">
+{site.photos.map((x) => <a class="t" href={x.href} target="_blank" rel="noopener"><div class="m" style="aspect-ratio:3/2;"><img src={`/img/${x.img}.jpg`} alt={x.caption} loading="lazy" /></div><b>{x.caption}</b><span class="kind">{x.year}</span></a>)}
+</div>
+<div class="morewrap"><a class="more" href="https://www.instagram.com/vivekmangipudi/" target="_blank" rel="noopener">More on Instagram</a></div>
+</Base>
