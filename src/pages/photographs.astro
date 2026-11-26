@@ -1,11 +1,53 @@
 ---
 import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
+const all = site.photos;
+const pid = (n) => `p${String(n).padStart(2, '0')}`;
+const sets = ['Street', 'Mountains'].map((s) => ({ name: s, items: all.filter((p) => p.set === s) }));
+const titles = { Street: 'Street', Mountains: 'Mountains' };
 ---
-<Base title="Photographs" nav="ph" description="Street photography by Vivek Mangipudi." image="/img/pigeons.jpg">
-<div class="ph-head"><h1>Photographs</h1><p class="lede g">With my trusty Fujifilm, I enjoy street photography. Chasing Dragons on Streets, a photo essay, was published internationally.</p></div>
-<div class="gal" style="margin-top:0;">
-{site.photos.map((x) => <a class="t" href={x.href} target="_blank" rel="noopener"><div class="m" style="aspect-ratio:3/2;"><img src={`/img/${x.img}.jpg`} alt={x.caption} loading="lazy" /></div><b>{x.caption}</b><span class="kind">{x.year}</span></a>)}
+<Base title="Photographs" nav="ph" description="Street and mountain photographs by Vivek Mangipudi, mostly from Indian cities and the Himalaya." image="/img/photos/01-pigeons.jpg">
+<div class="ph-head"><h1>Photographs</h1><p class="lede g">Mostly street scenes from Indian cities, and a few from the mountains. I look for what people walk past: a nap on a ledge, a window of old watches, a crow on a boat.</p></div>
+
+<div id="g">
+{sets.map((s) => (
+<section class="phset">
+<h2 class="ph-sec">{titles[s.name]}<span>{s.items.length} photographs</span></h2>
+<div class="mas">
+{s.items.map((p) => <a class="ph" href={`#${pid(p.n)}`} aria-label={p.alt}><img src={`/img/photos/${p.file}-t.jpg`} width={p.w} height={p.h} alt={p.alt} loading="lazy" decoding="async" /></a>)}
 </div>
+</section>
+))}
+</div>
+
+<a class="essay" href="https://vimeo.com/84020577" target="_blank" rel="noopener">
+<div class="m"><img src="/img/dragons.jpg" alt="Chasing Dragons on Streets" loading="lazy" /></div>
+<div><span class="kind">Photo essay · 2014</span><h3>Chasing Dragons on Streets</h3><p>Published internationally. The film version is on Vimeo.</p><span class="cta">Watch the film</span></div>
+</a>
 <div class="morewrap"><a class="more" href="https://www.instagram.com/vivekmangipudi/" target="_blank" rel="noopener">More on Instagram</a></div>
+
+{all.map((p, i) => {
+  const prev = all[(i + all.length - 1) % all.length];
+  const next = all[(i + 1) % all.length];
+  return (
+  <div class="lb" id={pid(p.n)} role="dialog" aria-label={`Photograph ${p.n} of ${all.length}`}>
+    <a class="lb-x" href="#g" aria-label="Close">Close</a>
+    <a class="lb-p" href={`#${pid(prev.n)}`} aria-label="Previous photograph">←</a>
+    <a class="lb-n" href={`#${pid(next.n)}`} aria-label="Next photograph">→</a>
+    <figure><img src={`/img/photos/${p.file}.jpg`} alt={p.alt} loading="lazy" decoding="async" /><figcaption><span>{String(p.n).padStart(2, '0')} / {all.length}</span> {p.alt}</figcaption></figure>
+  </div>);
+})}
+
+<script>
+const open = () => document.querySelector('.lb:target') as HTMLElement | null;
+function close() { const y = window.scrollY; location.hash = 'g'; window.scrollTo(0, y); requestAnimationFrame(() => window.scrollTo(0, y)); }
+document.querySelectorAll('.lb-x').forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); close(); }));
+document.addEventListener('keydown', (e) => {
+  const lb = open(); if (!lb) return;
+  if (e.key === 'Escape') close();
+  if (e.key === 'ArrowRight') (lb.querySelector('.lb-n') as HTMLElement).click();
+  if (e.key === 'ArrowLeft') (lb.querySelector('.lb-p') as HTMLElement).click();
+});
+document.querySelectorAll('.lb').forEach((lb) => lb.addEventListener('click', (e) => { if ((e.target as HTMLElement).classList.contains('lb')) close(); }));
+</script>
 </Base>

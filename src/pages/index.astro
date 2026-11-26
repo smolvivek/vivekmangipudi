@@ -25,21 +25,4 @@ import now from '../data/now.json';
 </div>
 <div class="morewrap"><a class="more" href="/work">See all work</a></div>
 </section>
-<script>
-async function nowPlaying() {
-  try {
-    const r = await fetch('/api/now-playing');
-    if (!r.ok) return;
-    const d = await r.json();
-    if (!d.track) return;
-    document.getElementById('np-track')!.textContent = `${d.track}, ${d.artist}`;
-    document.getElementById('np-label')!.textContent = d.playing ? 'Now playing' : 'Last played';
-    const eq = document.querySelector('#np .eq') as HTMLElement;
-    eq.style.display = d.playing ? '' : 'none';
-    document.getElementById('np')!.classList.remove('np-off');
-  } catch {}
-}
-nowPlaying();
-setInterval(nowPlaying, 60000);
-</script>
 </Base>
