@@ -3,6 +3,13 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "scripts": { "dev": "astro dev", "build": "astro build", "preview": "astro preview" },
-  "dependencies": { "astro": "5.18.2" }
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@vercel/functions": "^3.11.4",
+    "astro": "5.18.2"
+  }
 }
