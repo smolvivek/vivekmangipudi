@@ -10,7 +10,7 @@ const { p, prev, next } = Astro.props;
 <Base title={p.title} nav="work" kind="WebPage" ld={caseLd(p)} description={p.short} image={`/img/${p.img}.jpg`}>
 <div class="ph-head"><span class="kind">{p.kind}</span><h1>{p.title}</h1><p class="lede">{p.short}</p></div>
 <div class="specs">
-<div><span>Role</span>{p.role}</div><div><span>Client</span>{p.client}</div><div><span>Year</span>{p.year}</div>
+<div><span>Role</span>{p.role}</div><div><span>{p.clientLabel || 'Client'}</span>{p.client}</div><div><span>Year</span>{p.year}</div>
 <div><span>Link</span><a class="u" href={p.link.href} target="_blank" rel="noopener">{p.link.label}</a></div>
 </div>
 <a href={p.link.href} target="_blank" rel="noopener"><img class="heroimg" src={`/img/${p.img}.jpg`} alt={p.title} /></a>

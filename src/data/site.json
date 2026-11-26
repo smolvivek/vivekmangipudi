@@ -268,13 +268,13 @@
    "year": "2016",
    "img": "bloop",
    "pos": "25% center",
-   "role": "Concept and copywriting",
-   "client": "Pencillati Studios",
+   "role": "Writer",
+   "client": "Ram Singh",
    "link": {
     "label": "Visit the film’s site",
     "href": "https://www.blooptroop.com/"
    },
-   "short": "An award-winning animated short in which a barbarian, a master archer and a knight go to war against a fly.",
+   "short": "An award-winning animated short in which a barbarian, a master archer and a knight go to war against a fly. Directed by Ram Singh; I’m one of the writers.",
    "story": [
     {
      "h": "The film",
@@ -282,7 +282,7 @@
     },
     {
      "h": "My role",
-     "t": "I worked on the concept and am credited as a copywriter."
+     "t": "I’m one of the writers on the film. I worked on the concept and am credited as a copywriter."
     },
     {
      "h": "Recognition",
@@ -294,38 +294,46 @@
     }
    ],
    "gallery": [],
-   "featured": false
+   "featured": false,
+   "clientLabel": "Director"
   },
   {
    "slug": "far-the-days-come",
    "title": "Far the Days Come",
-   "kind": "Animated short by Ram Singh",
-   "year": "2018",
+   "kind": "Animated short",
+   "year": "2017",
    "img": "fardays",
    "pos": "center",
-   "role": "Concept",
+   "role": "Writer",
    "client": "Ram Singh",
    "link": {
-    "label": "View on Behance",
-    "href": "https://www.behance.net/gallery/173853683/FAR-THE-DAYS-COME"
+    "label": "Watch on Vimeo",
+    "href": "https://vimeo.com/206041903"
    },
-   "short": "An animated short about a tree that fell and the fire man discovered. I’m credited for the concept.",
+   "short": "A black-and-white animated short that follows fire from the tree that fell to the world it went on to burn. Directed by Ram Singh; I’m one of the writers. A Vimeo Staff Pick and winner of 2D Animated Short at the Delhi CG Animation Awards.",
    "story": [
     {
      "h": "The film",
-     "t": "A tree fell, and man discovered fire. An animated short by Ram Singh."
+     "t": "It begins with a tree that fell and the fire man discovered. From there the film follows what that fire turned into, from comfort to destruction, until, as its closing line puts it, the world has come a full circle. Directed by Ram Singh at Pencillati Studios, in black and white, running just under two minutes."
     },
     {
      "h": "My role",
-     "t": "I’m credited for the concept."
+     "t": "I’m one of the writers on the film, and I’m credited for the concept. Ram Singh directed it."
+    },
+    {
+     "h": "Recognition",
+     "t": "Vimeo Staff Pick. Winner, 2D Animated Short at the Delhi CG Animation Awards."
     },
     {
      "h": "Watch",
-     "t": "The film and its making are on Behance."
+     "t": "The film is on <a class=\"u\" href=\"https://vimeo.com/206041903\" target=\"_blank\" rel=\"noopener\">Vimeo</a>. It also has an <a class=\"u\" href=\"https://www.imdb.com/title/tt6720754/\" target=\"_blank\" rel=\"noopener\">IMDb page</a> and a <a class=\"u\" href=\"https://www.behance.net/gallery/173853683/FAR-THE-DAYS-COME\" target=\"_blank\" rel=\"noopener\">Behance write-up</a>."
     }
    ],
-   "gallery": [],
-   "featured": false
+   "gallery": [
+    "fardays-keyart"
+   ],
+   "featured": false,
+   "clientLabel": "Director"
   }
  ],
  "work": [
@@ -461,12 +469,12 @@
   },
   {
    "title": "Far the Days Come",
-   "kind": "Animated short by Ram Singh",
-   "year": "2018",
+   "kind": "Animated short",
+   "year": "2017",
    "img": "fardays",
    "href": "/work/far-the-days-come",
    "cat": "films",
-   "line": "A tree fell, and man discovered fire. I’m credited for the concept.",
+   "line": "A black-and-white short that follows fire from a fallen tree to a burning world. Directed by Ram Singh; I’m one of the writers.",
    "pos": "center"
   },
   {
@@ -496,7 +504,7 @@
    "img": "bloop",
    "href": "/work/bloop-troop",
    "cat": "films",
-   "line": "Award-winning animated short, officially selected at international festivals.",
+   "line": "Award-winning animated short, officially selected at international festivals. Directed by Ram Singh; I’m one of the writers.",
    "pos": "center"
   },
   {
@@ -892,13 +900,46 @@
  ],
  "email": "vivek.mangipudi@hotmail.com",
  "greetings": [
-  "Hello.",
-  "नमस्ते.",
-  "Hola.",
-  "Bonjour.",
-  "こんにちは。",
-  "Ciao.",
-  "Olá."
+  {
+   "t": "Hello.",
+   "l": "en"
+  },
+  {
+   "t": "नमस्ते.",
+   "l": "hi"
+  },
+  {
+   "t": "வணக்கம்.",
+   "l": "ta"
+  },
+  {
+   "t": "Hola.",
+   "l": "es"
+  },
+  {
+   "t": "నమస్కారం.",
+   "l": "te"
+  },
+  {
+   "t": "Bonjour.",
+   "l": "fr"
+  },
+  {
+   "t": "नमस्कारः.",
+   "l": "sa"
+  },
+  {
+   "t": "こんにちは。",
+   "l": "ja"
+  },
+  {
+   "t": "നമസ്കാരം.",
+   "l": "ml"
+  },
+  {
+   "t": "Ciao.",
+   "l": "it"
+  }
  ],
  "education": [
   {

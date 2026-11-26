@@ -79,7 +79,7 @@ export function caseMd(p: any) {
 ${p.kind} · ${p.year}
 
 - Role: ${p.role}
-- Client: ${p.client}
+- ${p.clientLabel || 'Client'}: ${p.client}
 - Year: ${p.year}
 - Link: [${p.link.label}](${p.link.href})
 
@@ -187,6 +187,6 @@ export const photoGallery = () => ({
 });
 
 export const caseLd = (p: any) => ([
-  { '@type': 'CreativeWork', '@id': abs('/work/' + p.slug) + '#work', name: p.title, description: p.short, genre: p.kind, dateCreated: p.year, url: abs('/work/' + p.slug), image: abs('/img/' + p.img + '.jpg'), creator: { '@id': personId }, creditText: `${NAME}, ${p.role}`, producer: { '@type': 'Organization', name: p.client }, sameAs: p.link.href, mainEntityOfPage: { '@id': abs('/work/' + p.slug) + '#webpage' } },
+  { '@type': 'CreativeWork', '@id': abs('/work/' + p.slug) + '#work', name: p.title, description: p.short, genre: p.kind, dateCreated: p.year, url: abs('/work/' + p.slug), image: abs('/img/' + p.img + '.jpg'), creator: { '@id': personId }, creditText: `${NAME}, ${p.role}`, ...(p.clientLabel === 'Director' ? { director: { '@type': 'Person', name: p.client } } : { producer: { '@type': 'Organization', name: p.client } }), sameAs: p.link.href, mainEntityOfPage: { '@id': abs('/work/' + p.slug) + '#webpage' } },
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: abs('/') }, { '@type': 'ListItem', position: 2, name: 'Work', item: abs('/work') }, { '@type': 'ListItem', position: 3, name: p.title, item: abs('/work/' + p.slug) }] },
 ]);

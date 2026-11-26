@@ -22,11 +22,9 @@ a{color:#141414;text-decoration:none}
 .dot .tip #tip-np{color:#BDB8AF}
 .dot:hover .tip,.dot:focus-visible .tip{opacity:1;transform:translate(-50%,0)}
 .hero{text-align:center;padding:96px 0 56px;display:flex;flex-direction:column;align-items:center;gap:28px}
-.hero h1{margin:0;font-weight:500;font-size:88px;line-height:1.04;letter-spacing:-3px;font-family:Inter,'Noto Sans Devanagari','Noto Sans JP',sans-serif}
+.hero h1{margin:0;font-weight:500;font-size:88px;line-height:1.04;letter-spacing:-3px;font-family:Inter,'Noto Sans Devanagari','Noto Sans Tamil','Noto Sans Telugu','Noto Sans Malayalam','Noto Sans JP',sans-serif}
 .greet{display:inline-grid;justify-items:center}
-.greet span{grid-area:1/1;opacity:0;animation:greet 17.5s infinite}
-.greet span:nth-child(2){animation-delay:2.5s}.greet span:nth-child(3){animation-delay:5s}.greet span:nth-child(4){animation-delay:7.5s}.greet span:nth-child(5){animation-delay:10s}.greet span:nth-child(6){animation-delay:12.5s}.greet span:nth-child(7){animation-delay:15s}
-@keyframes greet{0%{opacity:0;transform:translateY(12px)}2%,12%{opacity:1;transform:none}14.2%,100%{opacity:0;transform:translateY(-12px)}}
+.greet span{grid-area:1/1;opacity:0;animation:greet var(--T,25s) infinite}
 .hero p,.lede{margin:0;max-width:640px;font-size:18px;line-height:1.6}
 .g{color:#7A766F}
 .u{text-decoration:underline;text-underline-offset:3px;color:inherit}
@@ -135,6 +133,8 @@ button.more{font:inherit;font-size:15px;background:none;cursor:pointer;color:#14
 .mr{margin:18px 0 0;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.8;color:#9A958C;text-align:center}.mr a{text-decoration:underline;text-underline-offset:2px;color:inherit}.mr a:hover{color:#E8541E}
 .skip{position:absolute;left:12px;top:-60px;z-index:100;background:#141414;color:#F4F2EE;padding:10px 16px;border-radius:8px;font-size:14px}.skip:focus{top:12px}
 .greet span[data-g]::before{content:attr(data-g)}
+.greet span:lang(hi),.greet span:lang(sa),.greet span:lang(ta),.greet span:lang(te),.greet span:lang(ml),.greet span:lang(ja){letter-spacing:0}
+.greet span:lang(te),.greet span:lang(ml),.greet span:lang(ta){font-size:.78em;line-height:1.3;padding-bottom:.08em}
 .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .brands{margin-top:72px}
 .brands-h{margin:0 0 22px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:#7A766F}

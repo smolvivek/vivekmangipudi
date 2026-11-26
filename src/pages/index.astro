@@ -3,10 +3,14 @@ import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
 import now from '../data/now.json';
 import Brands from '../components/Brands.astro';
+const T = site.greetings.length * 2.5;
+const pc = (x: number) => ((x / T) * 100).toFixed(3) + '%';
+const greetCss = `@keyframes greet{0%{opacity:0;transform:translateY(12px)}${pc(0.35)},${pc(2.1)}{opacity:1;transform:none}${pc(2.485)},100%{opacity:0;transform:translateY(-12px)}}`;
 ---
 <Base>
+<style is:inline set:html={greetCss}></style>
 <section class="hero">
-<h1><span class="greet">{site.greetings.map((g, i) => i === 0 ? <span>{g}</span> : <span data-g={g} aria-hidden="true"></span>)}</span><br />I’m Vivek.</h1>
+<h1><span class="greet" style={`--T:${T}s`}>{site.greetings.map((g, i) => i === 0 ? <span lang={g.l}>{g.t}</span> : <span lang={g.l} data-g={g.t} aria-hidden="true" style={`animation-delay:${i * 2.5}s`}></span>)}</span><br />I’m Vivek.</h1>
 <p>{site.intro1}</p>
 <p class="g" set:html={site.intro2} />
 <div class="socs">{site.socials.map((s) => <a class="soc" href={s.href} target="_blank" rel="noopener"><Fragment set:html={s.svg} /><span>{s.name}</span></a>)}</div>
