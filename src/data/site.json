@@ -27,7 +27,7 @@
     },
     {
      "h": "Where it is",
-     "t": "Launched in November 2026. A launch promo film is in production."
+     "t": "Launched in November 2026 at satyaspeaks.co, with talks, courses, writings and a members’ community, and apps for Android and iOS. A launch promo film is in production."
     }
    ],
    "gallery": []
@@ -141,10 +141,10 @@
    "slug": "royal-enfield",
    "title": "Royal Enfield",
    "kind": "Sales training film series",
-   "year": "2023",
+   "year": "2019",
    "img": "re",
    "pos": "center",
-   "role": "Director",
+   "role": "Director and business development",
    "client": "Royal Enfield",
    "link": {
     "label": "Watch on Vimeo",
@@ -158,7 +158,7 @@
     },
     {
      "h": "My role",
-     "t": "I directed the series, staging each lesson as a scene between customers and staff on the showroom floor."
+     "t": "I directed the series and led the business development behind it, staging each lesson as a scene between customers and staff on the showroom floor."
     },
     {
      "h": "Watch",
@@ -280,16 +280,6 @@
    "pos": "center top"
   },
   {
-   "title": "Royal Enfield",
-   "kind": "Sales training films",
-   "year": "2023",
-   "img": "re",
-   "href": "/work/royal-enfield",
-   "cat": "films",
-   "line": "Five films for showroom sales and customer teams.",
-   "pos": "center"
-  },
-  {
    "title": "Rebel Foods",
    "kind": "#HungerSaver (w)Rap",
    "year": "2019",
@@ -320,6 +310,16 @@
    "pos": "center"
   },
   {
+   "title": "Royal Enfield",
+   "kind": "Sales training films",
+   "year": "2019",
+   "img": "re",
+   "href": "/work/royal-enfield",
+   "cat": "films",
+   "line": "Five films for showroom sales and customer teams.",
+   "pos": "center"
+  },
+  {
    "title": "JW Marriott",
    "kind": "Diwali with Marriott",
    "year": "2019",
@@ -346,7 +346,7 @@
    "img": "fardays",
    "href": "https://www.behance.net/gallery/173853683/FAR-THE-DAYS-COME",
    "cat": "films",
-   "line": "A tree fell, and man discovered fire. Credited with special thanks.",
+   "line": "A tree fell, and man discovered fire. I’m credited for the concept.",
    "pos": "center"
   },
   {
