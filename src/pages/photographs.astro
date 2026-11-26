@@ -1,12 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
+import { photoGallery } from '../lib/site';
 const all = site.photos;
 const pid = (n) => `p${String(n).padStart(2, '0')}`;
 const sets = ['Street', 'Mountains'].map((s) => ({ name: s, items: all.filter((p) => p.set === s) }));
 const titles = { Street: 'Street', Mountains: 'Mountains' };
 ---
-<Base title="Photographs" nav="ph" description="Street and mountain photographs by Vivek Mangipudi, mostly from Indian cities and the Himalaya." image="/img/photos/01-pigeons.jpg">
+<Base title="Photographs" nav="ph" kind="CollectionPage" ld={[photoGallery()]} description="Street and mountain photographs by Vivek Mangipudi, mostly from Indian cities and the Himalaya." image="/img/photos/01-pigeons.jpg">
 <div class="ph-head"><h1>Photographs</h1><p class="lede g">Mostly street scenes from Indian cities, and a few from the mountains. I look for what people walk past: a nap on a ledge, a window of old watches, a crow on a boat.</p></div>
 
 <div id="g">

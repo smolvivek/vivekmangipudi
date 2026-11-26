@@ -1,10 +1,14 @@
 ---
 import site from '../data/site.json';
-interface Props { title?: string; description?: string; nav?: string; image?: string }
-const { title, description = 'Vivek Mangipudi is a creative director in Mumbai, moving into marketing and strategy. Films, products and brand work.', nav = '', image = '/img/og.jpg' } = Astro.props;
+import { pageLd } from '../lib/site';
+interface Props { title?: string; description?: string; nav?: string; image?: string; kind?: string; ld?: any[] }
+const { title, description = 'Vivek Mangipudi is a creative director in Mumbai, moving into marketing and strategy. Films, products and brand work.', nav = '', image = '/img/og.jpg', kind = 'WebPage', ld = [] } = Astro.props;
 const full = title ? `${title} · Vivek Mangipudi` : 'Vivek Mangipudi · Creative director';
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const person = { '@context': 'https://schema.org', '@type': 'Person', name: 'Vivek Mangipudi', jobTitle: 'Creative Director', address: { '@type': 'PostalAddress', addressLocality: 'Mumbai', addressCountry: 'IN' }, email: site.email, url: Astro.site?.toString(), sameAs: site.socials.map((s) => s.href) };
+const path = Astro.url.pathname;
+const notFound = title === 'Not found';
+const mdHref = path === '/' ? '/index.md' : `${path}.md`;
+const graph = pageLd(path, full, description, kind, ld);
 ---
 <!doctype html>
 <html lang="en">
@@ -13,6 +17,11 @@ const person = { '@context': 'https://schema.org', '@type': 'Person', name: 'Viv
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{full}</title>
 <meta name="description" content={description} />
+<meta name="author" content="Vivek Mangipudi" />
+<meta name="robots" content={notFound ? 'noindex' : 'index,follow,max-image-preview:large,max-snippet:-1'} />
+{!notFound && <link rel="alternate" type="text/markdown" href={mdHref} title="Markdown version of this page" />}
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
+<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 <link rel="canonical" href={canonical} />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <meta property="og:title" content={full} />
@@ -29,9 +38,10 @@ const person = { '@context': 'https://schema.org', '@type': 'Person', name: 'Viv
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+Devanagari:wght@500&family=Noto+Sans+JP:wght@500&family=JetBrains+Mono:wght@400&display=swap" />
 <link rel="stylesheet" href="/styles.css" />
-<script type="application/ld+json" set:html={JSON.stringify(person)} />
+<script type="application/ld+json" set:html={JSON.stringify(graph)} />
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <div class="site">
 <header class="top">
 <a href="/" style="font-weight:600;">Vivek Mangipudi</a>
@@ -39,20 +49,21 @@ const person = { '@context': 'https://schema.org', '@type': 'Person', name: 'Viv
 <svg viewBox="0 0 28 28" aria-hidden="true"><circle class="trk" cx="14" cy="14" r="12"/><circle class="prg" id="prg" cx="14" cy="14" r="12"/><circle class="core" cx="14" cy="14" r="5"/></svg>
 <span class="tip"><b>Open to marketing and strategy roles</b><span id="tip-np" hidden></span><em>Say hello →</em></span>
 </a>
-<nav class="r">
-<a href="/work" class={nav === 'work' ? 'on' : ''}>Work</a>
-<a href="/photographs" class={nav === 'ph' ? 'on' : ''}>Photographs</a>
-<a href="/about" class={nav === 'about' ? 'on' : ''}>About</a>
-<a href="/contact" class={nav === 'contact' ? 'on' : ''}>Contact</a>
+<nav class="r" aria-label="Primary">
+<a href="/work" class={nav === 'work' ? 'on' : ''} aria-current={nav === 'work' ? 'page' : undefined}>Work</a>
+<a href="/photographs" class={nav === 'ph' ? 'on' : ''} aria-current={nav === 'ph' ? 'page' : undefined}>Photographs</a>
+<a href="/about" class={nav === 'about' ? 'on' : ''} aria-current={nav === 'about' ? 'page' : undefined}>About</a>
+<a href="/contact" class={nav === 'contact' ? 'on' : ''} aria-current={nav === 'contact' ? 'page' : undefined}>Contact</a>
 </nav>
 </header>
-<main><slot /></main>
-<footer class="foot">
+<main id="main"><slot /></main>
+<footer class="foot" aria-label="Contact and profiles">
 <span style="font-size:13px;color:#7A766F;">Open to marketing and strategy roles</span>
 <a class="mail" href="/contact">Get in touch</a>
 <div class="socs" style="margin-top:8px;">
 {site.socials.map((s) => <a class="soc" href={s.href} target="_blank" rel="noopener"><Fragment set:html={s.svg} /><span>{s.name}</span></a>)}
 </div>
+<p class="mr">For agents and machines: <a href="/llms.txt">llms.txt</a> · <a href={mdHref} rel="alternate" type="text/markdown">this page as Markdown</a> · <a href="/sitemap.xml">sitemap</a></p>
 </footer>
 </div>
 <script>

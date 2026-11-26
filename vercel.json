@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/", "has": [{ "type": "header", "key": "accept", "value": ".*text/markdown.*" }], "destination": "/index.md" },
+    { "source": "/:path((?!api/|img/|[^/]*\\.[^/]*$).+)", "has": [{ "type": "header", "key": "accept", "value": ".*text/markdown.*" }], "destination": "/:path.md" }
+  ],
+  "headers": [
+    { "source": "/(.*)", "headers": [{ "key": "Vary", "value": "Accept" }, { "key": "Link", "value": "</llms.txt>; rel=\"describedby\"; type=\"text/plain\", </sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\"" }] },
+    { "source": "/(.*)\\.md", "headers": [{ "key": "Content-Type", "value": "text/markdown; charset=utf-8" }] },
+    { "source": "/llms(.*)\\.txt", "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }] }
+  ]
+}

@@ -1,0 +1,150 @@
+[
+ {
+  "name": "Ford",
+  "via": "J. Walter Thompson: five car launches, including the Endeavour",
+  "logo": "ford",
+  "w": 71.2,
+  "h": 26.7
+ },
+ {
+  "name": "Royal Enfield",
+  "via": "Six sales training films, as director"
+ },
+ {
+  "name": "Google",
+  "via": "McCann Worldgroup",
+  "logo": "google",
+  "w": 27.3,
+  "h": 28
+ },
+ {
+  "name": "FAASOS",
+  "via": "Rebel Foods: the #HungerSaver rap film, as director"
+ },
+ {
+  "name": "IKEA",
+  "via": "McCann Worldgroup",
+  "logo": "ikea",
+  "w": 68.9,
+  "h": 27.6
+ },
+ {
+  "name": "JW Marriott",
+  "via": "Diwali films, as director"
+ },
+ {
+  "name": "Cisco",
+  "via": "McCann Worldgroup",
+  "logo": "cisco",
+  "w": 53.1,
+  "h": 28
+ },
+ {
+  "name": "OZiva",
+  "via": "Product films, as producer"
+ },
+ {
+  "name": "Intel",
+  "via": "McCann Worldgroup",
+  "logo": "intel",
+  "w": 70,
+  "h": 27.1
+ },
+ {
+  "name": "JSW",
+  "via": "Athlete films at the Inspire Institute of Sport"
+ },
+ {
+  "name": "Lufthansa",
+  "via": "McCann Worldgroup",
+  "logo": "lufthansa",
+  "w": 28,
+  "h": 28
+ },
+ {
+  "name": "Duracell",
+  "via": "Wunderman"
+ },
+ {
+  "name": "Sony",
+  "via": "McCann Worldgroup",
+  "logo": "sony",
+  "w": 103.9,
+  "h": 18.3
+ },
+ {
+  "name": "Nestlé",
+  "via": "Webchutney"
+ },
+ {
+  "name": "Nokia",
+  "via": "Wunderman",
+  "logo": "nokia",
+  "w": 89.9,
+  "h": 21.1
+ },
+ {
+  "name": "Levi’s",
+  "via": "Wunderman"
+ },
+ {
+  "name": "Microsoft",
+  "via": "Webchutney and Wunderman",
+  "logo": "microsoft",
+  "w": 28,
+  "h": 28
+ },
+ {
+  "name": "USAID",
+  "via": "Freelance"
+ },
+ {
+  "name": "Airtel",
+  "via": "Webchutney and Wunderman",
+  "logo": "airtel",
+  "w": 28.3,
+  "h": 28
+ },
+ {
+  "name": "IBM",
+  "via": "Salt Studios: directed an ad film",
+  "logo": "ibm",
+  "w": 71.2,
+  "h": 26.7
+ },
+ {
+  "name": "Coca-Cola",
+  "via": "Wunderman",
+  "logo": "cocacola",
+  "w": 77.8,
+  "h": 24.4
+ },
+ {
+  "name": "Maruti Suzuki",
+  "via": "Salt Studios: directed an ad film",
+  "logo": "suzuki",
+  "w": 27.8,
+  "h": 28
+ },
+ {
+  "name": "KFC",
+  "via": "Webchutney",
+  "logo": "kfc",
+  "w": 77.8,
+  "h": 24.4
+ },
+ {
+  "name": "BBC",
+  "via": "Salt Studios: channel rebrand",
+  "logo": "bbc",
+  "w": 81.5,
+  "h": 23.3
+ },
+ {
+  "name": "HP",
+  "via": "Webchutney",
+  "logo": "hp",
+  "w": 28,
+  "h": 28
+ }
+]

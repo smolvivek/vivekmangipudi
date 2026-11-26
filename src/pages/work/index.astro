@@ -1,12 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
 import site from '../../data/site.json';
+import { workList } from '../../lib/site';
 const go = (w) => w.href.startsWith('/work/') ? 'Case study' : w.href === '/photographs' ? 'See photographs' : (w.cat === 'films' || /vimeo|youtube/.test(w.href)) ? 'Watch' : 'Visit';
 ---
-<Base title="Work" nav="work" description="Strategy, products, films and photographs by Vivek Mangipudi.">
+<Base title="Work" nav="work" kind="CollectionPage" ld={[workList()]} description="Strategy, products, films and photographs by Vivek Mangipudi.">
 <div class="ph-head"><h1>Work</h1><p class="lede g">Products I’ve built, films I’ve worked on and photographs I’ve taken. The bigger ones come with a written case study; the rest link to where they live.</p></div>
 <input class="flt" type="radio" name="flt" id="fa" checked /><input class="flt" type="radio" name="flt" id="ff" /><input class="flt" type="radio" name="flt" id="fp" /><input class="flt" type="radio" name="flt" id="fh" />
-<div class="seg"><div><label for="fa">All</label><label for="fp">Products</label><label for="ff">Films</label><label for="fh">Photography</label></div></div>
+<div class="seg" role="group" aria-label="Filter work"><div><label for="fa">All</label><label for="fp">Products</label><label for="ff">Films</label><label for="fh">Photography</label></div></div>
 <div class="grid">
 {site.work.map((w) => {
   const ext = !w.href.startsWith('/');
@@ -14,7 +15,7 @@ const go = (w) => w.href.startsWith('/work/') ? 'Case study' : w.href === '/phot
   return (
   <a class={`t ${cls}`} href={w.href} target={ext ? '_blank' : undefined} rel={ext ? 'noopener' : undefined}>
   <div class="m"><img src={`/img/${w.img}.jpg`} alt={w.title} style={`object-position:${w.pos};`} loading="lazy" /></div>
-  <b>{w.title}</b><span class="kind">{w.kind} · {w.year}</span><p>{w.line}</p><span class="go">{go(w)} →</span>
+  <h3>{w.title}</h3><span class="kind">{w.kind} · {w.year}</span><p>{w.line}</p><span class="go">{go(w)} →</span>
   </a>);
 })}
 </div>

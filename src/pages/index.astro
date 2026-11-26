@@ -2,10 +2,11 @@
 import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
 import now from '../data/now.json';
+import Brands from '../components/Brands.astro';
 ---
 <Base>
 <section class="hero">
-<h1><span class="greet">{site.greetings.map((g) => <span>{g}</span>)}</span><br />I’m Vivek.</h1>
+<h1><span class="greet">{site.greetings.map((g, i) => i === 0 ? <span>{g}</span> : <span data-g={g} aria-hidden="true"></span>)}</span><br />I’m Vivek.</h1>
 <p>{site.intro1}</p>
 <p class="g" set:html={site.intro2} />
 <div class="socs">{site.socials.map((s) => <a class="soc" href={s.href} target="_blank" rel="noopener"><Fragment set:html={s.svg} /><span>{s.name}</span></a>)}</div>
@@ -14,10 +15,11 @@ import now from '../data/now.json';
 <a id="np" class="np-off" href="https://www.last.fm/user/bumvee" target="_blank" rel="noopener"><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span id="np-label">Now playing</span> &nbsp;<b id="np-track"></b></a>
 <span>Now studying &nbsp;<b>{now.studying}</b></span>
 </div>
+<Brands />
 <section class="sec">
 <div class="sh"><h2>Selected work</h2><p>Strategy, products and films from the last few years</p></div>
 <div class="feat">
-{site.projects.map((p) => (
+{site.projects.filter((p) => p.featured).map((p) => (
 <a class="card" href={`/work/${p.slug}`}>
 <div class="m"><img src={`/img/${p.img}.jpg`} alt={p.title} style={`object-position:${p.pos};`} loading="lazy" /></div>
 <h3>{p.title}</h3><span class="kind">{p.kind} · {p.year}</span><p>{p.short}</p><span class="cta">Read the case study</span>

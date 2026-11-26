@@ -1,0 +1,35 @@
+---
+import brands from '../data/brands.json';
+const raw = import.meta.glob('../logos/*.svg', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const svg = (k: string) => raw[`../logos/${k}.svg`] || '';
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Brands Vivek Mangipudi has worked with',
+  itemListElement: brands.map((b, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Organization', name: b.name, description: b.via } })),
+};
+---
+<section class="brands" aria-labelledby="brands-h">
+<h2 id="brands-h" class="brands-h">Brands I’ve worked with</h2>
+<div class="brands-run">
+<ul class="brands-track" role="list">
+{brands.map((b) => (
+  <li class="bi" itemscope itemtype="https://schema.org/Organization" title={`${b.name}: ${b.via}`}>
+    <meta itemprop="description" content={b.via} />
+    {b.logo
+      ? <span class="bl" style={`width:${b.w}px;height:${b.h}px`} set:html={svg(b.logo)} />
+      : <span class="wm" aria-hidden="true">{b.name}</span>}
+    <span class="sr" itemprop="name">{b.name}</span><span class="sr">, {b.via}.</span>
+  </li>
+))}
+</ul>
+<ul class="brands-track brands-dup" aria-hidden="true" role="presentation" inert>
+{brands.map((b) => (
+  <li class="bi">
+    {b.logo ? <span class="bl" style={`width:${b.w}px;height:${b.h}px`} set:html={svg(b.logo)} /> : <span class="wm">{b.name}</span>}
+  </li>
+))}
+</ul>
+</div>
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+</section>

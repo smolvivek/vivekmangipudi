@@ -1,12 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
 import site from '../../data/site.json';
+import { caseLd } from '../../lib/site';
 export function getStaticPaths() {
   return site.projects.map((p, i) => ({ params: { slug: p.slug }, props: { p, prev: site.projects[(i - 1 + site.projects.length) % site.projects.length], next: site.projects[(i + 1) % site.projects.length] } }));
 }
 const { p, prev, next } = Astro.props;
 ---
-<Base title={p.title} nav="work" description={p.short} image={`/img/${p.img}.jpg`}>
+<Base title={p.title} nav="work" kind="WebPage" ld={caseLd(p)} description={p.short} image={`/img/${p.img}.jpg`}>
 <div class="ph-head"><span class="kind">{p.kind}</span><h1>{p.title}</h1><p class="lede">{p.short}</p></div>
 <div class="specs">
 <div><span>Role</span>{p.role}</div><div><span>Client</span>{p.client}</div><div><span>Year</span>{p.year}</div>

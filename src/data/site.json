@@ -30,7 +30,8 @@
      "t": "Launched in November 2026 at satyaspeaks.co, with talks, courses, writings and a members’ community, and apps for Android and iOS. A launch promo film is in production."
     }
    ],
-   "gallery": []
+   "gallery": [],
+   "featured": true
   },
   {
    "slug": "gatefold",
@@ -71,41 +72,8 @@
    "gallery": [
     "gatefold2",
     "gatefold3"
-   ]
-  },
-  {
-   "slug": "pwd-start",
-   "title": "pwd start",
-   "kind": "Product, design and build",
-   "year": "2026",
-   "img": "pwdstart",
-   "pos": "left top",
-   "role": "Founder",
-   "client": "Own product",
-   "link": {
-    "label": "Visit pwd start",
-    "href": "https://pwd-start.vercel.app"
-   },
-   "short": "Free, hands-on lessons that teach how AI, software, hardware, the internet and security work, for people starting from zero.",
-   "story": [
-    {
-     "h": "The idea",
-     "t": "Most technical courses assume you already speak the language. pwd start is for people with no technical background who want to understand the tools they now use every day."
-    },
-    {
-     "h": "How it works",
-     "t": "Short lessons across five paths: Orientation, Security, Software, Hardware and AI. No videos, no memorising. You poke at small simulations, answer a few quick questions, and finish each stage by making something real. XP and levels keep score."
-    },
-    {
-     "h": "Built from",
-     "t": "My own learning journal. Each path follows what I have worked through myself."
-    },
-    {
-     "h": "Access",
-     "t": "Free. No account, nothing to install, and progress stays on your device."
-    }
    ],
-   "gallery": []
+   "featured": true
   },
   {
    "slug": "lulu-fm",
@@ -135,7 +103,8 @@
      "t": "Live, and shared on Instagram and X."
     }
    ],
-   "gallery": []
+   "gallery": [],
+   "featured": true
   },
   {
    "slug": "royal-enfield",
@@ -150,11 +119,11 @@
     "label": "Watch on Vimeo",
     "href": "https://vimeo.com/946949276"
    },
-   "short": "Five training films for Royal Enfield’s showroom sales and customer teams, told as scenes from the showroom floor.",
+   "short": "Six training films for Royal Enfield’s showroom sales and customer teams, told as scenes from the showroom floor.",
    "story": [
     {
      "h": "The films",
-     "t": "A series for Royal Enfield’s sales and customer relations teams. Each film takes one part of the sale: the test ride, decision-making and pricing, upselling and cross-selling, customer relations, and a summary."
+     "t": "A series for Royal Enfield’s sales and customer relations teams. Each film takes one part of the sale, from the test ride and decision-making and pricing to upselling and cross-selling, customer relations and a summary."
     },
     {
      "h": "My role",
@@ -162,10 +131,11 @@
     },
     {
      "h": "Watch",
-     "t": "The decision-making and pricing film is on Vimeo, and all five are on my YouTube channel."
+     "t": "The decision-making and pricing film is on Vimeo, and all six are on my YouTube channel."
     }
    ],
-   "gallery": []
+   "gallery": [],
+   "featured": true
   },
   {
    "slug": "rebel-foods",
@@ -195,7 +165,167 @@
      "t": "Over a million views and 21,000 likes on YouTube."
     }
    ],
-   "gallery": []
+   "gallery": [],
+   "featured": true
+  },
+  {
+   "slug": "shunya",
+   "title": "Shunya",
+   "kind": "Launch films",
+   "year": "2018",
+   "img": "shunya",
+   "pos": "center",
+   "role": "Director",
+   "client": "Shunya · Digi Osmosis",
+   "link": {
+    "label": "Watch on Vimeo",
+    "href": "https://vimeo.com/933269024"
+   },
+   "short": "Launch films for Shunya’s herbal infusion drinks, mixing live action with hyperrealistic animation.",
+   "story": [
+    {
+     "h": "The brief",
+     "t": "Shunya was launching three new beverages, and the campaign needed films to introduce them."
+    },
+    {
+     "h": "The films",
+     "t": "The films mix live action with hyperrealistic animation."
+    },
+    {
+     "h": "My role",
+     "t": "I directed the films while at Digi Osmosis."
+    }
+   ],
+   "gallery": [],
+   "featured": true
+  },
+  {
+   "slug": "oziva",
+   "title": "OZiva",
+   "kind": "Product films",
+   "year": "2023",
+   "img": "oziva",
+   "pos": "center",
+   "role": "Producer",
+   "client": "OZiva",
+   "link": {
+    "label": "Watch on Vimeo",
+    "href": "https://vimeo.com/932978875"
+   },
+   "short": "Product films for OZiva’s protein and hair vitamins.",
+   "story": [
+    {
+     "h": "The films",
+     "t": "Product films for two of OZiva’s ranges: its protein and its hair vitamins."
+    },
+    {
+     "h": "My role",
+     "t": "I produced the films."
+    },
+    {
+     "h": "Watch",
+     "t": "The films are on Vimeo."
+    }
+   ],
+   "gallery": [],
+   "featured": false
+  },
+  {
+   "slug": "jw-marriott",
+   "title": "JW Marriott",
+   "kind": "Diwali with Marriott",
+   "year": "2019",
+   "img": "diwali",
+   "pos": "center",
+   "role": "Director",
+   "client": "JW Marriott",
+   "link": {
+    "label": "Watch on Vimeo",
+    "href": "https://vimeo.com/932978555"
+   },
+   "short": "Films for JW Marriott’s Diwali campaign, “Handcrafted to Perfection”.",
+   "story": [
+    {
+     "h": "The films",
+     "t": "A set of Diwali films for JW Marriott, built around the line “Handcrafted to Perfection”."
+    },
+    {
+     "h": "My role",
+     "t": "I directed the films."
+    },
+    {
+     "h": "Watch",
+     "t": "The films are on Vimeo."
+    }
+   ],
+   "gallery": [],
+   "featured": false
+  },
+  {
+   "slug": "bloop-troop",
+   "title": "The Bloop Troop",
+   "kind": "Animated short",
+   "year": "2016",
+   "img": "bloop",
+   "pos": "25% center",
+   "role": "Concept and copywriting",
+   "client": "Pencillati Studios",
+   "link": {
+    "label": "Visit the film’s site",
+    "href": "https://www.blooptroop.com/"
+   },
+   "short": "An award-winning animated short in which a barbarian, a master archer and a knight go to war against a fly.",
+   "story": [
+    {
+     "h": "The film",
+     "t": "A barbarian, a master archer and a knight are drawn into battle against a formidable fly, turning an age-old wish to win a war against a common pest into an epic, over-the-top conflict. Directed by Ram Singh at Pencillati Studios."
+    },
+    {
+     "h": "My role",
+     "t": "I worked on the concept and am credited as a copywriter."
+    },
+    {
+     "h": "Recognition",
+     "t": "Winner, Best Animated Short at the 24FPS International Animation Awards 2016. Winner, 2D Animated Short at the Delhi CG Animation Awards. Winner, Best Animated Short at IIACFF 2016. Nominated for Best Short Film at the Suzanne Awards 2016. Official selection at the Big Muddy Film Festival, the Beeston Film Festival and the International Motion Festival in Cyprus, all in 2016."
+    },
+    {
+     "h": "Watch",
+     "t": "The film is on <a class=\"u\" href=\"https://vimeo.com/1080143640\" target=\"_blank\" rel=\"noopener\">Vimeo</a>, and the film’s own site is <a class=\"u\" href=\"https://www.blooptroop.com/\" target=\"_blank\" rel=\"noopener\">blooptroop.com</a>."
+    }
+   ],
+   "gallery": [],
+   "featured": false
+  },
+  {
+   "slug": "far-the-days-come",
+   "title": "Far the Days Come",
+   "kind": "Animated short by Ram Singh",
+   "year": "2018",
+   "img": "fardays",
+   "pos": "center",
+   "role": "Concept",
+   "client": "Ram Singh",
+   "link": {
+    "label": "View on Behance",
+    "href": "https://www.behance.net/gallery/173853683/FAR-THE-DAYS-COME"
+   },
+   "short": "An animated short about a tree that fell and the fire man discovered. I’m credited for the concept.",
+   "story": [
+    {
+     "h": "The film",
+     "t": "A tree fell, and man discovered fire. An animated short by Ram Singh."
+    },
+    {
+     "h": "My role",
+     "t": "I’m credited for the concept."
+    },
+    {
+     "h": "Watch",
+     "t": "The film and its making are on Behance."
+    }
+   ],
+   "gallery": [],
+   "featured": false
   }
  ],
  "work": [
@@ -224,7 +354,7 @@
    "kind": "Learn tech from zero",
    "year": "2026",
    "img": "pwdstart",
-   "href": "/work/pwd-start",
+   "href": "https://pwd-start.vercel.app",
    "cat": "products",
    "line": "Free, hands-on lessons for non-technical beginners.",
    "pos": "left top"
@@ -280,13 +410,13 @@
    "pos": "center top"
   },
   {
-   "title": "Nikhat Zareen",
-   "kind": "JSW and Inspire Institute of Sport",
+   "title": "JSW Inspire Institute of Sport",
+   "kind": "Athlete films",
    "year": "2023",
    "img": "nikhat",
    "href": "https://vimeo.com/1080144812",
    "cat": "films",
-   "line": "A film on the boxer, for JSW and IIS, Vijaynagar.",
+   "line": "Films with tens of athletes at the institute in Vijaynagar, including the boxer Nikhat Zareen.",
    "pos": "center"
   },
   {
@@ -294,9 +424,9 @@
    "kind": "Product films",
    "year": "2023",
    "img": "oziva",
-   "href": "https://vimeo.com/932978875",
+   "href": "/work/oziva",
    "cat": "films",
-   "line": "Films for OZiva’s protein and hair vitamins.",
+   "line": "Product films for OZiva’s protein and hair vitamins, as producer.",
    "pos": "center"
   },
   {
@@ -306,7 +436,7 @@
    "img": "re",
    "href": "/work/royal-enfield",
    "cat": "films",
-   "line": "Five films for showroom sales and customer teams.",
+   "line": "Six films for showroom sales and customer teams.",
    "pos": "center"
   },
   {
@@ -324,19 +454,9 @@
    "kind": "Diwali with Marriott",
    "year": "2019",
    "img": "diwali",
-   "href": "https://vimeo.com/932978555",
+   "href": "/work/jw-marriott",
    "cat": "films",
-   "line": "“Handcrafted to Perfection”, a Diwali film.",
-   "pos": "center"
-  },
-  {
-   "title": "The Bloop Troop",
-   "kind": "Animated short",
-   "year": "2019",
-   "img": "bloop",
-   "href": "https://vimeo.com/1080143640",
-   "cat": "films",
-   "line": "An animated short.",
+   "line": "Films for JW Marriott’s Diwali campaign, “Handcrafted to Perfection”.",
    "pos": "center"
   },
   {
@@ -344,7 +464,7 @@
    "kind": "Animated short by Ram Singh",
    "year": "2018",
    "img": "fardays",
-   "href": "https://www.behance.net/gallery/173853683/FAR-THE-DAYS-COME",
+   "href": "/work/far-the-days-come",
    "cat": "films",
    "line": "A tree fell, and man discovered fire. I’m credited for the concept.",
    "pos": "center"
@@ -354,19 +474,29 @@
    "kind": "Launch films",
    "year": "2018",
    "img": "shunya",
-   "href": "https://vimeo.com/933269024",
+   "href": "/work/shunya",
    "cat": "films",
-   "line": "Launch films for the herbal infusion drinks, at Digi Osmosis.",
+   "line": "Launch films mixing live action and hyperrealistic animation, directed at Digi Osmosis.",
    "pos": "center"
   },
   {
    "title": "Ford Endeavour",
-   "kind": "TVC",
+   "kind": "Advertising campaign",
    "year": "2016",
    "img": "ford",
    "href": "https://vimeo.com/265134668",
    "cat": "films",
-   "line": "A TV commercial from my time at JWT.",
+   "line": "An advertising campaign for the Ford Endeavour, as creative director at JWT.",
+   "pos": "center"
+  },
+  {
+   "title": "The Bloop Troop",
+   "kind": "Animated short",
+   "year": "2016",
+   "img": "bloop",
+   "href": "/work/bloop-troop",
+   "cat": "films",
+   "line": "Award-winning animated short, officially selected at international festivals.",
    "pos": "center"
   },
   {
@@ -769,5 +899,20 @@
   "こんにちは。",
   "Ciao.",
   "Olá."
+ ],
+ "education": [
+  {
+   "years": "2009 – 2010",
+   "name": "PG Diploma in TV Production, Film/Radio/Video Studies",
+   "org": "Indian Institute of Mass Communication",
+   "short": "IIMC, Delhi",
+   "note": "Graduated as the most promising student, and was the first in the institute to secure an off-campus placement."
+  },
+  {
+   "years": "2005 – 2008",
+   "name": "Bachelor of Journalism and Mass Communication",
+   "org": "Guru Gobind Singh Indraprastha University",
+   "short": "GGSIP University"
+  }
  ]
 }
