@@ -22,8 +22,8 @@
      "t": "Satya Speaks had outgrown its earlier website. It needed one place for talks, courses, writings and a members’ community, and a plan for bringing people to it."
     },
     {
-     "h": "What I did",
-     "t": "I built the new website and devised the marketing and advertising strategy for its launch, across the newsletter, YouTube, Substack and Spotify."
+     "h": "My role",
+     "t": "I built the new website and wrote the marketing and advertising strategy for its launch, across the newsletter, YouTube, Substack and Spotify."
     },
     {
      "h": "Where it is",
@@ -65,6 +65,10 @@
      "t": "A near-black canvas, two functional colours and three typefaces, built on Dieter Rams’ idea that nothing should be on it that isn’t doing a job."
     },
     {
+     "h": "My role",
+     "t": "I founded Gatefold and I am responsible for the product, the design and the build."
+    },
+    {
      "h": "Status",
      "t": "In active development. Next.js, Supabase, Stripe and Razorpay, on Vercel."
     }
@@ -99,11 +103,19 @@
      "t": "Illustrated scenes of Lulu, our cat, fill the screen while one small player at the bottom plays from both services."
     },
     {
+     "h": "My role",
+     "t": "I designed and built Lulu-fm. The library is my own: every song I have liked, every artist I follow."
+    },
+    {
      "h": "Where it is",
      "t": "Live, and shared on Instagram and X."
     }
    ],
-   "gallery": [],
+   "gallery": [
+    "lulu2",
+    "lulu3",
+    "lulu4"
+   ],
    "featured": true
   },
   {
@@ -127,14 +139,18 @@
     },
     {
      "h": "My role",
-     "t": "I directed the series and led the business development behind it, staging each lesson as a scene between customers and staff on the showroom floor."
+     "t": "I led the business development behind the series and directed all six films. Each lesson is played as a scene on a showroom floor, a customer on one side and a salesperson on the other, so the team watches a sale go right or wrong in a situation it already knows."
     },
     {
      "h": "Watch",
      "t": "The decision-making and pricing film is on Vimeo, and all six are on my YouTube channel."
     }
    ],
-   "gallery": [],
+   "gallery": [
+    "re2",
+    "re3",
+    "re4"
+   ],
    "featured": true
   },
   {
@@ -161,11 +177,18 @@
      "t": "The #HungerSaver (w)Rap, featuring Kaam Bhaari, shot on location in Juhu, Mumbai."
     },
     {
+     "h": "My role",
+     "t": "I directed the film: a rap for the #HungerSaver cause, shot on location in Juhu with Kaam Bhaari. It has had over a million views."
+    },
+    {
      "h": "Result",
      "t": "Over a million views and 21,000 likes on YouTube."
     }
    ],
-   "gallery": [],
+   "gallery": [
+    "hunger2",
+    "hunger3"
+   ],
    "featured": true
   },
   {
@@ -193,10 +216,13 @@
     },
     {
      "h": "My role",
-     "t": "I directed the films while at Digi Osmosis."
+     "t": "I directed the films while at Digi Osmosis. A live performer carries the story. Hyperrealistic animation carries the product: ashwagandha roots, herbs and splashes, with the claims set in large type, from zero sugar to zero preservatives."
     }
    ],
-   "gallery": [],
+   "gallery": [
+    "shunya2",
+    "shunya4"
+   ],
    "featured": true
   },
   {
@@ -220,14 +246,17 @@
     },
     {
      "h": "My role",
-     "t": "I produced the films."
+     "t": "I produced the films for both ranges. The protein film puts the shake in a home kitchen, mixed in a shaker and drunk. The conversation around it is set in a living room, in soft daylight."
     },
     {
      "h": "Watch",
      "t": "The films are on Vimeo."
     }
    ],
-   "gallery": [],
+   "gallery": [
+    "oziva3",
+    "oziva4"
+   ],
    "featured": false
   },
   {
@@ -237,7 +266,7 @@
    "year": "2019",
    "img": "diwali",
    "pos": "center",
-   "role": "Director",
+   "role": "Director and producer",
    "client": "JW Marriott",
    "link": {
     "label": "Watch on Vimeo",
@@ -251,14 +280,17 @@
     },
     {
      "h": "My role",
-     "t": "I directed the films."
+     "t": "I directed one of the films and produced it. Marriott’s own Director of Culinary appears on camera, and the Diwali sweets are shot close enough to taste: chocolate poured, nuts scattered, a brush glazing the surface."
     },
     {
      "h": "Watch",
      "t": "The films are on Vimeo."
     }
    ],
-   "gallery": [],
+   "gallery": [
+    "diwali2",
+    "diwali3"
+   ],
    "featured": false
   },
   {
@@ -282,7 +314,7 @@
     },
     {
      "h": "My role",
-     "t": "I’m one of the writers on the film. I worked on the concept and am credited as a copywriter."
+     "t": "I’m one of the writers on the film, and I worked on its concept: an epic war, fought over a common pest. Ram Singh directed it at Pencillati Studios."
     },
     {
      "h": "Recognition",
@@ -293,7 +325,11 @@
      "t": "The film is on <a class=\"u\" href=\"https://vimeo.com/1080143640\" target=\"_blank\" rel=\"noopener\">Vimeo</a>, and the film’s own site is <a class=\"u\" href=\"https://www.blooptroop.com/\" target=\"_blank\" rel=\"noopener\">blooptroop.com</a>."
     }
    ],
-   "gallery": [],
+   "gallery": [
+    "bloop2",
+    "bloop3",
+    "bloop4"
+   ],
    "featured": false,
    "clientLabel": "Director"
   },
@@ -318,7 +354,7 @@
     },
     {
      "h": "My role",
-     "t": "I’m one of the writers on the film, and I’m credited for the concept. Ram Singh directed it."
+     "t": "I’m one of the writers on the film, and I’m credited for the concept: one tree falls, and what follows is fire. Ram Singh directed it."
     },
     {
      "h": "Recognition",
@@ -330,6 +366,10 @@
     }
    ],
    "gallery": [
+    "fardays2",
+    "fardays3",
+    "fardays4",
+    "fardays5",
     "fardays-keyart"
    ],
    "featured": false,
@@ -464,7 +504,7 @@
    "img": "diwali",
    "href": "/work/jw-marriott",
    "cat": "films",
-   "line": "Films for JW Marriott’s Diwali campaign, “Handcrafted to Perfection”.",
+   "line": "Films for JW Marriott’s Diwali campaign, “Handcrafted to Perfection”. I directed one and produced it.",
    "pos": "center"
   },
   {

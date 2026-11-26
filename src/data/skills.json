@@ -1,0 +1,207 @@
+[
+ {
+  "group": "Craft: film, design and photography",
+  "items": [
+   {
+    "name": "Premiere Pro",
+    "icon": "adobepremierepro",
+    "color": "#9999FF"
+   },
+   {
+    "name": "After Effects",
+    "icon": "adobeaftereffects",
+    "color": "#9999FF"
+   },
+   {
+    "name": "DaVinci Resolve",
+    "icon": "davinciresolve",
+    "color": "#233A51"
+   },
+   {
+    "name": "Final Cut Pro",
+    "mono": "Fc",
+    "color": "#141414"
+   },
+   {
+    "name": "Photoshop",
+    "icon": "adobephotoshop",
+    "color": "#31A8FF"
+   },
+   {
+    "name": "Illustrator",
+    "icon": "adobeillustrator",
+    "color": "#FF9A00"
+   },
+   {
+    "name": "InDesign",
+    "icon": "adobeindesign",
+    "color": "#FF3366"
+   },
+   {
+    "name": "Lightroom",
+    "icon": "adobelightroom",
+    "color": "#31A8FF"
+   },
+   {
+    "name": "Figma",
+    "icon": "figma",
+    "color": "#F24E1E"
+   },
+   {
+    "name": "Fujifilm",
+    "icon": "fujifilm",
+    "color": "#FB0020"
+   }
+  ]
+ },
+ {
+  "group": "Advertising and marketing",
+  "items": [
+   {
+    "name": "Google Ads",
+    "icon": "googleads",
+    "color": "#4285F4"
+   },
+   {
+    "name": "Meta Ads Manager",
+    "icon": "meta",
+    "color": "#0467DF"
+   },
+   {
+    "name": "LinkedIn Ads",
+    "icon": "linkedin",
+    "color": "#0A66C2"
+   },
+   {
+    "name": "YouTube Ads",
+    "icon": "youtube",
+    "color": "#FF0000"
+   },
+   {
+    "name": "Spotify Ads",
+    "icon": "spotify",
+    "color": "#1ED760"
+   },
+   {
+    "name": "Google Analytics",
+    "icon": "googleanalytics",
+    "color": "#E37400"
+   },
+   {
+    "name": "Search Console",
+    "icon": "googlesearchconsole",
+    "color": "#458CF5"
+   },
+   {
+    "name": "Tag Manager",
+    "icon": "googletagmanager",
+    "color": "#246FDB"
+   },
+   {
+    "name": "HubSpot",
+    "icon": "hubspot",
+    "color": "#FF7A59"
+   },
+   {
+    "name": "Mailchimp",
+    "icon": "mailchimp",
+    "color": "#FFE01B"
+   },
+   {
+    "name": "Substack",
+    "icon": "substack",
+    "color": "#FF6719"
+   },
+   {
+    "name": "Semrush",
+    "icon": "semrush",
+    "color": "#FF642D"
+   },
+   {
+    "name": "Ahrefs",
+    "mono": "Ah",
+    "color": "#141414"
+   }
+  ]
+ },
+ {
+  "group": "Build and AI",
+  "items": [
+   {
+    "name": "Claude and Claude Code",
+    "icon": "claude",
+    "color": "#D97757"
+   },
+   {
+    "name": "Astro",
+    "icon": "astro",
+    "color": "#BC52EE"
+   },
+   {
+    "name": "Next.js",
+    "icon": "nextdotjs",
+    "color": "#000000"
+   },
+   {
+    "name": "Supabase",
+    "icon": "supabase",
+    "color": "#3FCF8E"
+   },
+   {
+    "name": "Vercel",
+    "icon": "vercel",
+    "color": "#000000"
+   },
+   {
+    "name": "GitHub",
+    "icon": "github",
+    "color": "#181717"
+   },
+   {
+    "name": "WordPress",
+    "icon": "wordpress",
+    "color": "#21759B"
+   },
+   {
+    "name": "Zoho",
+    "icon": "zoho",
+    "color": "#E42527"
+   },
+   {
+    "name": "Make",
+    "icon": "make",
+    "color": "#6D00CC"
+   },
+   {
+    "name": "Circle",
+    "icon": "circle",
+    "color": "#8669AE"
+   }
+  ]
+ },
+ {
+  "group": "Everyday workflow",
+  "items": [
+   {
+    "name": "Canva",
+    "icon": "canva",
+    "color": "#00C4CC"
+   },
+   {
+    "name": "Notion",
+    "icon": "notion",
+    "color": "#000000"
+   },
+   {
+    "name": "Slack",
+    "icon": "slack",
+    "color": "#4A154B"
+   },
+   {
+    "name": "Obsidian",
+    "icon": "obsidian",
+    "color": "#7C3AED"
+   }
+  ]
+ }
+]

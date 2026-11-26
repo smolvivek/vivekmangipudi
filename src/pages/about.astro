@@ -1,11 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
+import Tools from '../components/Tools.astro';
 ---
 <Base title="About" nav="about" kind="ProfilePage" description="Experience and education of Vivek Mangipudi, creative director in Mumbai, open to marketing and strategy roles.">
 <div class="ph-head"><h1>About</h1><p class="lede">{site.intro1}</p><p class="lede g" set:html={site.intro2} /></div>
 <section class="sec" style="margin-top:40px;"><div class="sh"><h2>Experience</h2></div>
 <div class="xp">{site.experience.map((x) => <div><span class="y">{x.years}</span><b>{x.role}</b><span>{x.org}</span></div>)}</div></section>
+<Tools />
 <section class="sec"><div class="sh"><h2>Education</h2></div>
 <div class="xp">{(site as any).education.map((e) => <div><span class="y">{e.years}</span><b>{e.name}</b><span>{e.short}</span></div>)}</div></section>
 </Base>

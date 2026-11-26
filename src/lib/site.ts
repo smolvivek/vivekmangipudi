@@ -1,3 +1,4 @@
+import skills from '../data/skills.json';
 import site from '../data/site.json';
 import brands from '../data/brands.json';
 import now from '../data/now.json';
@@ -56,6 +57,10 @@ ${plain(site.intro2)}
 ## Experience
 
 ${site.experience.map((x: any) => `- ${x.years}: ${x.role}, ${x.org}`).join('\n')}
+
+## Skills and tools
+
+${skills.map((g: any) => `- ${g.group}: ${g.items.map((t: any) => t.name).join(', ')}`).join('\n')}
 
 ## Education
 
@@ -163,7 +168,7 @@ export const person = () => ({
     { '@type': 'CollegeOrUniversity', name: 'Indian Institute of Mass Communication', address: 'Delhi, India' },
     { '@type': 'CollegeOrUniversity', name: 'Guru Gobind Singh Indraprastha University', address: 'Delhi, India' },
   ],
-  knowsAbout: ['Creative direction', 'Advertising', 'Brand and marketing strategy', 'Campaign development', 'Business development and pitching', 'Film direction and production', 'Brand storytelling', 'Copywriting', 'Street photography'],
+  knowsAbout: ['Creative direction', 'Advertising', 'Brand and marketing strategy', 'Campaign development', 'Business development and pitching', 'Film direction and production', 'Brand storytelling', 'Copywriting', 'Street photography', ...skills.flatMap((g: any) => g.items.map((t: any) => t.name))],
   memberOf: site.experience.map((x: any) => ({ '@type': 'OrganizationRole', roleName: x.role, startDate: (x.years.match(/\d{4}/) || [''])[0], ...( (x.years.match(/\d{4}/g) || []).length > 1 ? { endDate: x.years.match(/\d{4}/g)![1] } : {}), memberOf: { '@type': 'Organization', name: x.org } })),
   sameAs: site.socials.map((s: any) => s.href),
 });

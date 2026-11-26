@@ -1,0 +1,28 @@
+---
+import skills from '../data/skills.json';
+const raw = import.meta.glob('../tools/*.svg', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const svg = (k: string) => raw[`../tools/${k}.svg`] || '';
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Skills and tools Vivek Mangipudi works with',
+  itemListElement: skills.flatMap((g) => g.items.map((t) => ({ name: t.name, group: g.group }))).map((t, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'DefinedTerm', name: t.name, inDefinedTermSet: t.group } })),
+};
+---
+<section class="sec tools" aria-labelledby="tools-h">
+<div class="sh"><h2 id="tools-h">Skills and tools</h2><p>What I work in, day to day.</p></div>
+{skills.map((g) => (
+  <div class="tg">
+    <h3>{g.group}</h3>
+    <ul class="chips" role="list">
+      {g.items.map((t: any) => (
+        <li class="chip" style={`--c:${t.color}`}>
+          {t.icon ? <span class="ci" set:html={svg(t.icon)} /> : <span class="ci mono" aria-hidden="true">{t.mono}</span>}
+          <span class="cn">{t.name}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+))}
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+</section>
