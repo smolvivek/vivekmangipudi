@@ -8,6 +8,7 @@ export default async function handler(req, res) {
     const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${encodeURIComponent(user)}&api_key=${key}&format=json&limit=1`;
     const r = await fetch(url);
     const d = await r.json();
+    if (d?.error) return res.status(502).json({ error: 'lastfm', code: d.error, message: d.message });
     const t = d?.recenttracks?.track?.[0];
     if (!t) return res.status(404).json({ error: 'no tracks' });
     res.setHeader('Cache-Control', 's-maxage=30, stale-while-revalidate=60');
