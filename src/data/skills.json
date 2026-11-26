@@ -46,11 +46,61 @@
     "name": "Figma",
     "icon": "figma",
     "color": "#F24E1E"
+   }
+  ]
+ },
+ {
+  "group": "Cameras and sound",
+  "items": [
+   {
+    "name": "ARRI",
+    "mono": "Ar",
+    "color": "#141414"
+   },
+   {
+    "name": "RED",
+    "mono": "Re",
+    "color": "#141414"
+   },
+   {
+    "name": "Blackmagic",
+    "icon": "blackmagicdesign",
+    "color": "#FFA200"
+   },
+   {
+    "name": "Sony",
+    "icon": "sony",
+    "color": "#141414"
+   },
+   {
+    "name": "Canon",
+    "mono": "Cn",
+    "color": "#141414"
    },
    {
     "name": "Fujifilm",
     "icon": "fujifilm",
     "color": "#FB0020"
+   },
+   {
+    "name": "Logic Pro",
+    "mono": "Lp",
+    "color": "#141414"
+   },
+   {
+    "name": "Pro Tools",
+    "icon": "protools",
+    "color": "#7ACB10"
+   },
+   {
+    "name": "Ableton",
+    "mono": "Ab",
+    "color": "#141414"
+   },
+   {
+    "name": "Audition",
+    "icon": "adobeaudition",
+    "color": "#9999FF"
    }
   ]
  },
@@ -125,13 +175,118 @@
   ]
  },
  {
-  "group": "Build and AI",
+  "group": "Strategy and reporting",
+  "items": [
+   {
+    "name": "Google Docs",
+    "icon": "googledocs",
+    "color": "#4285F4"
+   },
+   {
+    "name": "Google Sheets",
+    "icon": "googlesheets",
+    "color": "#34A853"
+   },
+   {
+    "name": "Google Slides",
+    "icon": "googleslides",
+    "color": "#FBBC04"
+   },
+   {
+    "name": "Google Drive",
+    "icon": "googledrive",
+    "color": "#4285F4"
+   },
+   {
+    "name": "PowerPoint",
+    "icon": "microsoftpowerpoint",
+    "color": "#B7472A"
+   },
+   {
+    "name": "Keynote",
+    "mono": "Kn",
+    "color": "#141414"
+   },
+   {
+    "name": "Excel",
+    "icon": "microsoftexcel",
+    "color": "#217346"
+   }
+  ]
+ },
+ {
+  "group": "AI and automation",
   "items": [
    {
     "name": "Claude and Claude Code",
     "icon": "claude",
     "color": "#D97757"
    },
+   {
+    "name": "ChatGPT",
+    "icon": "openai",
+    "color": "#412991"
+   },
+   {
+    "name": "Gemini",
+    "icon": "googlegemini",
+    "color": "#8E75B2"
+   },
+   {
+    "name": "Perplexity",
+    "icon": "perplexity",
+    "color": "#1FB8CD"
+   },
+   {
+    "name": "Midjourney",
+    "mono": "Mj",
+    "color": "#141414"
+   },
+   {
+    "name": "Runway",
+    "mono": "Rw",
+    "color": "#141414"
+   },
+   {
+    "name": "Sora",
+    "mono": "So",
+    "color": "#141414"
+   },
+   {
+    "name": "Veo",
+    "mono": "Ve",
+    "color": "#141414"
+   },
+   {
+    "name": "ElevenLabs",
+    "icon": "elevenlabs",
+    "color": "#000000"
+   },
+   {
+    "name": "Suno",
+    "icon": "suno",
+    "color": "#000000"
+   },
+   {
+    "name": "Zapier",
+    "icon": "zapier",
+    "color": "#FF4F00"
+   },
+   {
+    "name": "n8n",
+    "icon": "n8n",
+    "color": "#FF91AC"
+   },
+   {
+    "name": "Cursor",
+    "icon": "cursor",
+    "color": "#000000"
+   }
+  ]
+ },
+ {
+  "group": "Web, build and commerce",
+  "items": [
    {
     "name": "Astro",
     "icon": "astro",
@@ -161,6 +316,36 @@
     "name": "WordPress",
     "icon": "wordpress",
     "color": "#21759B"
+   },
+   {
+    "name": "Webflow",
+    "icon": "webflow",
+    "color": "#146EF5"
+   },
+   {
+    "name": "Framer",
+    "icon": "framer",
+    "color": "#0055FF"
+   },
+   {
+    "name": "Wix",
+    "icon": "wix",
+    "color": "#0C6EFC"
+   },
+   {
+    "name": "Shopify",
+    "icon": "shopify",
+    "color": "#7AB55C"
+   },
+   {
+    "name": "Stripe",
+    "icon": "stripe",
+    "color": "#635BFF"
+   },
+   {
+    "name": "Razorpay",
+    "icon": "razorpay",
+    "color": "#0C2451"
    },
    {
     "name": "Zoho",
